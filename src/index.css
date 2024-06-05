@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* @import './styles/custom.css'; */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Outfit;
+}
+
+#root{
+  min-height: 100vh;
+  display: flex;
+  animation: fadeIn 1.5s;
+}
+
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  
+  }
+  100%{
+    opacity: 1;
+  }
+
+}
+
+
+
+@layer utilities {
+  .bg-clip-text {
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+
+  .text-fill-transparent {
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+}
